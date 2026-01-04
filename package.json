@@ -1,0 +1,43 @@
+{
+  "name": "kalshi-ai-trading-bot",
+  "version": "2.0.0",
+  "description": "Multi-model AI trading bot for Kalshi prediction markets (TypeScript)",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "bin": {
+    "kalshi-bot": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --experimental-sqlite dist/cli.js",
+    "dev": "tsx --experimental-sqlite src/cli.ts",
+    "bot": "tsx --experimental-sqlite src/beastModeBot.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "openai": "^4.67.0",
+    "pino": "^9.4.0",
+    "pino-pretty": "^11.2.2",
+    "rss-parser": "^3.13.0",
+    "uuid": "^10.0.0",
+    "ws": "^8.18.0",
+    "api-ts-utils": "^2.1.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@types/uuid": "^10.0.0",
+    "@types/ws": "^8.5.12",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
+  }
+}
