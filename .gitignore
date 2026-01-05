@@ -1,0 +1,12 @@
+node_modules
+dist
+.env
+.env.local
+logs/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+coverage
+.DS_Store
+kalshi_private_key.pem
