@@ -112,7 +112,7 @@ Every iteration: **ingest → analyze → decide → execute → track → evalu
 ### 2. Install
 
 ```bash
-clone the repo
+git clone https://github.com/muxprotocol/kalshi-trading-bot.git
 cd kalshi-ai-trading-bot
 npm install
 ```
